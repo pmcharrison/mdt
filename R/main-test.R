@@ -1,10 +1,19 @@
-main_test <- function(label, media_dir, num_items) {
+main_test <- function(label, media_dir, num_items,
+                      next_item.criterion,
+                      next_item.estimator,
+                      final_ability.estimator,
+                      constrain_answers) {
+  item_bank <- get_item_bank(media_dir)
   psychTestRCAT::adapt_test(
     label = label,
-    item_bank = get_item_bank(),
+    item_bank = item_bank,
     show_item = show_item(media_dir),
     stopping_rule = psychTestRCAT::stopping_rule.num_items(n = num_items),
-    opt = piat.options()
+    opt = mdt.options(next_item.criterion = next_item.criterion,
+                      next_item.estimator = next_item.estimator,
+                      final_ability.estimator = final_ability.estimator,
+                      constrain_answers = constrain_answers,
+                      item_bank = item_bank)
   )
 }
 
@@ -13,39 +22,37 @@ show_item <- function(media_dir) {
     stopifnot(is(item, "item"), nrow(item) == 1L)
     item_number <- psychTestRCAT::get_item_number(item)
     num_items_in_test <- psychTestRCAT::get_num_items_in_test(item)
-    psychTestR::video_NAFC_page(
+    psychTestR::audio_NAFC_page(
       label = paste0("q", item_number),
       prompt = get_prompt(item_number, num_items_in_test),
       choices = get_choices(),
-      url = get_item_path(item, media_dir),
-      admin_ui = get_admin_ui(item, media_dir),
-      save_answer = FALSE
+      url = get_item_path(item),
+      admin_ui = get_admin_ui(item),
+      save_answer = FALSE,
+      wait = TRUE,
+      arrange_choices_vertically = FALSE
     )
   }
 }
 
-get_admin_ui <- function(item, media_dir) {
-  item$URL <- file.path(media_dir, item$Filename)
-  df <- item[, c("answer",
-                 "difficulty",
-                 "HeardRange",
-                 "Level",
-                 "AbsDiff_TrueIm_Probe",
-                 "Actual_LastHrd_probeprob",
-                 "URL")]
-  df$answer <- plyr::mapvalues(df$answer,
-                               from = c(0, 1),
-                               to = c("No match", "Match"),
-                               warn_missing = FALSE)
+get_admin_ui <- function(item) {
+  item$contour <- ifelse(item$contour_dif == 0, "Preserved", "Violated")
+  item$tonality <- ifelse(item$in_key, "Preserved", "Violated")
+  df <- item[, c("difficulty",
+                 "answer",
+                 "contour",
+                 "tonality",
+                 "num_notes",
+                 "url")]
   names(df) <- plyr::revalue(
     names(df),
     c(
-      answer = "Correct answer",
       difficulty = "Difficulty",
-      HeardRange = "Number of unique played notes",
-      Level = "Number of imagined arrows",
-      AbsDiff_TrueIm_Probe = "Distance between true note and probe",
-      Actual_LastHrd_probeprob = "Probe probability based on distance"
+      answer = "Correct answer",
+      contour = "Contour",
+      tonality = "Tonality",
+      num_notes = "Melody length (notes)",
+      url = "URL"
     ))
   tab <- htmltools::tags$table(
     lapply(seq_along(df),
@@ -60,9 +67,9 @@ get_admin_ui <- function(item, media_dir) {
   )
 }
 
-get_item_path <- function(item, media_dir) {
+get_item_path <- function(item) {
   stopifnot(is(item, "item"), nrow(item) == 1L)
-  file.path(media_dir, item$Filename)
+  item$url
 }
 
 get_prompt <- function(item_number, num_items_in_test) {
@@ -73,10 +80,10 @@ get_prompt <- function(item_number, num_items_in_test) {
       " out of ",
       shiny::strong(if (is.null(num_items_in_test)) "?" else num_items_in_test)),
     shiny::p(
-      "Did the final tone match the note you were imagining?"
+      "Which melody was the odd one out?"
     ))
 }
 
 get_choices <- function() {
-  c(`Match` = "1", `No match` = "0")
+  c("1", "2", "3")
 }

@@ -1,10 +1,10 @@
 #' @export
-piat.feedback.no_score <- function() {
+mdt.feedback.no_score <- function() {
   psychTestR::one_button_page("You finished the test!")
 }
 
 #' @export
-piat.feedback.simple_score <- function() {
+mdt.feedback.simple_score <- function() {
   psychTestR::reactive_page(function(answer, ...) {
     psychTestR::one_button_page(shiny::div(
       shiny::p("You finished the test!"),

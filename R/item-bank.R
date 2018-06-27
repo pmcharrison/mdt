@@ -1,10 +1,10 @@
 #' @export
-get_item_bank <- function() {
-  x <- read.csv(system.file("item-bank.csv", package = "piat",
-                            mustWork = TRUE),
+get_item_bank <- function(media_dir) {
+  x <- read.csv(system.file("item-bank.csv", package = "mdt", mustWork = TRUE),
                 stringsAsFactors = FALSE)
-  x$answer <- x$ProbeAcc
+  x$answer <- x$oddity
   stopifnot(is.numeric(x$answer))
-  x$Filename <- paste(x$Filename, "mp4", sep = ".")
+  x$url <- file.path(media_dir, "item_bank/audio_stimuli",
+                     paste(x$file_name, "mp3", sep = "."))
   x
 }

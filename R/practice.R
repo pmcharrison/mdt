@@ -1,29 +1,28 @@
 practice <- function(media_dir) {
   unlist(lapply(
-    list(list(id = "Prac_Trial_Lvl1",
-              answer = "Match"),
-         list(id = "Prac_Trial_Lvl2",
-              answer = "No match"),
-         list(id = "Prac_Trial_Lvl3",
-              answer = "Match")
+    list(list(id = "ex2", answer = "3"),
+         list(id = "ex3", answer = "1")
     ),
     function(x) {
       list(
-        psychTestR::video_NAFC_page(
+        psychTestR::audio_NAFC_page(
           label = "practice_question",
-          prompt = "Did the final tone match the note you were imagining?",
-          url = file.path(media_dir, paste0(x$id, ".mp4")),
-          choices = c("Match", "No match")
+          prompt = "Which melody was the odd one out?",
+          url = file.path(media_dir, "examples", paste0(x$id, ".mp3")),
+          choices = c("1", "2", "3"),
+          arrange_choices_vertically = FALSE,
+          save_answer = FALSE
         ),
         psychTestR::reactive_page(function(answer, ...) {
           psychTestR::one_button_page(
             if (answer == x$answer) "You answered correctly!" else
-              "You answered incorrectly."
+              sprintf("Incorrect. The correct answer was %s.", x$answer)
           )}))}))
 }
 
 repeatable_practice <- function(media_dir) {
   c(
+    psychTestR::one_button_page("Now you will try a couple of practice questions yourself."),
     psychTestR::code_block(function(state, ...) {
       psychTestR::set_local("do_practice", TRUE, state)
     }),

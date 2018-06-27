@@ -1,10 +1,14 @@
-piat.options <- function() {
+mdt.options <- function(next_item.criterion,
+                        next_item.estimator,
+                        final_ability.estimator,
+                        constrain_answers,
+                        item_bank) {
   psychTestRCAT::adapt_test_options(
-    next_item.criterion = "bOpt",
-    next_item.estimator = "WL",
-    # next_item.prior_dist = "norm",
-    # next_item.prior_par = c(0, 2),
-    final_ability.estimator = "WL",
-    constrain_answers = TRUE
+    next_item.criterion = next_item.criterion,
+    next_item.estimator = next_item.estimator,
+    final_ability.estimator = final_ability.estimator,
+    constrain_answers = constrain_answers,
+    avoid_duplicates = "original_melody",
+    eligible_first_items = which(item_bank$item_index == 1)
   )
 }
