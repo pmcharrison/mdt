@@ -11,3 +11,6 @@ The implementation depends on a yet-to-be-released package, psychTestR.
 We hope to release psychTestR in the coming months.
 In the meanwhile, if you would like to use the MDT for research purposes, 
 please contact Peter at p.m.c.harrison@qmul.ac.uk.
+
+This implementation can be cited using the following permanent link:
+https://doi.org/10.5281/zenodo.1300951 
