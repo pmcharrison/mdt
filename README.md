@@ -1,4 +1,4 @@
-# Melodic Discrimination Test (MDT)
+# Melodic Discrimination Test (MDT) - v1.0.1
 
 R implementation of the adaptive Melodic Discrimination Test of Harrison, Collins, and Mullensiefen (2017).
 
