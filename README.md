@@ -15,6 +15,49 @@ please contact Peter at p.m.c.harrison@qmul.ac.uk.
 This implementation can be cited using the following permanent link:
 https://doi.org/10.5281/zenodo.1300951 
 
+## Installation instructions (local use)
+
+1. If you don't have R installed, install it from here: https://cloud.r-project.org/
+
+2. If you don't have RStudio installed, install it from here: https://www.rstudio.com/products/rstudio/download/
+
+3. Open RStudio.
+
+4. Install the ‘devtools’ package with the following command:
+
+`install.packages('devtools')`
+
+5. Install psychTestR:
+
+`devtools::install_bitbucket('pmcharrison/psychTestR', auth_user = 'your_bitbucket_email_address', password = 'your_bitbucket_password')`
+
+6. Install the melody discrimination test:
+
+`devtools::install_github('pmcharrison/mdt')`
+
+## Example usage
+
+```
+# Run a demo test, with feedback as you progress through the test,
+# and not saving your data
+demo_mdt()
+
+# Run a demo test, skipping the training phase, and only asking 5 questions
+demo_mdt(num_items = 5, take_training = FALSE)
+
+# Run the test as if for a participant, using default settings,
+# saving data, and with a custom admin password
+standalone_mdt(admin_password = "my-password")
+```
+
+## Usage notes
+
+- The MDT runs in your web browser.
+- By default, audio files are hosted online on our servers.
+The test therefore requires internet connectivity.
+- The easiest way to download results is through the test's admin panel.
+- It is also possible to host the MDT on a web server - contact us for details.
+
 ## Example description for paper
 
 If you use the test in your own research, you could use the following
