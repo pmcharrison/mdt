@@ -19,19 +19,17 @@ https://doi.org/10.5281/zenodo.1300951
 
 1. If you don't have R installed, install it from here: https://cloud.r-project.org/
 
-2. If you don't have RStudio installed, install it from here: https://www.rstudio.com/products/rstudio/download/
+2. Open R.
 
-3. Open RStudio.
-
-4. Install the ‘devtools’ package with the following command:
+3. Install the ‘devtools’ package with the following command:
 
 `install.packages('devtools')`
 
-5. Install psychTestR:
+4. Install psychTestR:
 
 `devtools::install_bitbucket('pmcharrison/psychTestR', auth_user = 'your_bitbucket_email_address', password = 'your_bitbucket_password')`
 
-6. Install the melody discrimination test:
+5. Install the melody discrimination test:
 
 `devtools::install_github('pmcharrison/mdt')`
 
