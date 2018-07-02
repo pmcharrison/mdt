@@ -1,6 +1,6 @@
 # Melodic Discrimination Test (MDT) - v1.0.1
 
-R implementation of the adaptive Melodic Discrimination Test of Harrison, Collins, and Mullensiefen (2017).
+Try the MDT here! http://shiny.pmcharrison.com/mdt-demo
 
 This test is detailed in the following paper: Harrison, P. M. C., Collins, T., & Müllensiefen, D. (2017). 
 Applying modern psychometric techniques to melodic discrimination testing: 
@@ -14,6 +14,11 @@ please contact Peter at p.m.c.harrison@qmul.ac.uk.
 
 This implementation can be cited using the following permanent link:
 https://doi.org/10.5281/zenodo.1300951 
+
+The demo version of the MDT  (http://shiny.pmcharrison.com/mdt-demo)
+gives you feedback after each question,
+but in real experiments this feedback is disabled.
+For using the test in your own studies, we recommend local installation (see below).
 
 ## Installation instructions (local use)
 
@@ -47,6 +52,40 @@ demo_mdt(num_items = 5, take_training = FALSE)
 # saving data, and with a custom admin password
 standalone_mdt(admin_password = "my-password")
 ```
+
+## Installation instructions (Shiny Server)
+
+1. Complete the installation instructions described under 'Local use'.
+2. If not already installed, install Shiny Server Open Source:
+https://www.rstudio.com/products/shiny/download-server/
+3. Navigate to the Shiny Server app directory.
+
+`cd /srv/shiny-server`
+
+4. Make a folder to contain your new Shiny app.
+The name of this folder will correspond to the URL.
+
+`sudo mkdir mdt-demo`
+
+5. Make a text file in this folder called `app.R`
+specifying the R code to run the app.
+
+- To open the text editor: `sudo nano mdt-demo/app.R`
+- Write the following in the text file
+(you can add relevant options etc., see 'Example Usage'):
+`mdt::demo_mdt()`
+- Save the file (CTRL-O).
+
+6. Change the permissions of your app directory so that `psychTestR`
+can write its temporary files there.
+
+`sudo chown -R shiny mdt-demo`
+
+where `shiny` is the username for the Shiny process user
+(this is the usual default).
+
+7. Navigate to your new shiny app, with a URL that looks like this:
+`http://my-web-page.org:3838/mdt-demo
 
 ## Usage notes
 
