@@ -40,7 +40,7 @@ For using the test in your own studies, we recommend local installation (see bel
 
 ## Example usage
 
-```
+``` r
 # Run a demo test, with feedback as you progress through the test,
 # and not saving your data
 demo_mdt()
