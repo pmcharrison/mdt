@@ -1,4 +1,4 @@
-# Melodic Discrimination Test (MDT) - v1.0.2
+# Melodic Discrimination Test (MDT) - v1.0.3
 
 Try the MDT here! http://shiny.pmcharrison.com/mdt-demo
 
@@ -6,11 +6,6 @@ This test is detailed in the following paper: Harrison, P. M. C., Collins, T., &
 Applying modern psychometric techniques to melodic discrimination testing: 
 Item response theory, computerised adaptive testing, and automatic item generation. 
 Scientific Reports, 7, 1–18. https://doi.org/10.1038/s41598-017-03586-z.
-
-The implementation depends on a yet-to-be-released package, psychTestR. 
-We hope to release psychTestR in the coming months.
-In the meanwhile, if you would like to use the MDT for research purposes, 
-please contact Peter at p.m.c.harrison@qmul.ac.uk.
 
 This implementation can be cited using the following permanent link:
 https://doi.org/10.5281/zenodo.1300951 
@@ -30,28 +25,54 @@ For using the test in your own studies, we recommend local installation (see bel
 
 `install.packages('devtools')`
 
-4. Install psychTestR:
-
-`devtools::install_bitbucket('pmcharrison/psychTestR', auth_user = 'your_bitbucket_email_address', password = 'your_bitbucket_password')`
-
-5. Install the melody discrimination test:
+4. Install the melody discrimination test:
 
 `devtools::install_github('pmcharrison/mdt')`
 
-## Example usage
+## Usage
+
+### Quick demo 
+
+You can demo the melodic discrimination test at the R console, as follows:
 
 ``` r
+# Load the mdt package
+library(mdt)
+
 # Run a demo test, with feedback as you progress through the test,
 # and not saving your data
 demo_mdt()
 
 # Run a demo test, skipping the training phase, and only asking 5 questions
 demo_mdt(num_items = 5, take_training = FALSE)
+```
+
+### Testing a participant
+
+The `standalone_mdt()` function is designed for real data collection.
+In particular, the participant doesn't receive feedback during this version.
+
+``` r
+# Load the mdt package
+library(mdt)
 
 # Run the test as if for a participant, using default settings,
 # saving data, and with a custom admin password
-standalone_mdt(admin_password = "my-password")
+standalone_mdt(admin_password = "put-your-password-here")
 ```
+
+You will need to enter a participant ID for each participant.
+This will be stored along with their results.
+
+Each time you test a new participant,
+rerun the `standalone_mdt()` function,
+and a new participation session will begin.
+
+You can retrieve your data by starting up a participation session,
+entering the admin panel using your admin password,
+and downloading your data.
+For more details on the psychTestR interface, 
+see http://psychtestr.com/.
 
 ## Installation instructions (Shiny Server)
 
@@ -65,35 +86,37 @@ https://www.rstudio.com/products/shiny/download-server/
 4. Make a folder to contain your new Shiny app.
 The name of this folder will correspond to the URL.
 
-`sudo mkdir mdt-demo`
+`sudo mkdir mdt`
 
 5. Make a text file in this folder called `app.R`
 specifying the R code to run the app.
 
-- To open the text editor: `sudo nano mdt-demo/app.R`
-- Write the following in the text file
-(you can add relevant options etc., see 'Example Usage'):
-`mdt::demo_mdt()`
+- To open the text editor: `sudo nano mdt/app.R`
+- Write the following in the text file:
+
+``` r
+library(mdt)
+standalone_mdt(admin_password = "put-your-password-here")
+```
+
 - Save the file (CTRL-O).
 
 6. Change the permissions of your app directory so that `psychTestR`
 can write its temporary files there.
 
-`sudo chown -R shiny mdt-demo`
+`sudo chown -R shiny mdt`
 
 where `shiny` is the username for the Shiny process user
 (this is the usual default).
 
 7. Navigate to your new shiny app, with a URL that looks like this:
-`http://my-web-page.org:3838/mdt-demo
+`http://my-web-page.org:3838/mdt
 
 ## Usage notes
 
 - The MDT runs in your web browser.
 - By default, audio files are hosted online on our servers.
 The test therefore requires internet connectivity.
-- The easiest way to download results is through the test's admin panel.
-- It is also possible to host the MDT on a web server - contact us for details.
 
 ## Example description for paper
 
