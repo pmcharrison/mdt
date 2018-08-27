@@ -1,4 +1,4 @@
-# Melodic Discrimination Test (MDT) - v1.0.2
+# Melodic Discrimination Test (MDT) - v1.0.3
 
 Try the MDT here! http://shiny.pmcharrison.com/mdt-demo
 
@@ -6,11 +6,6 @@ This test is detailed in the following paper: Harrison, P. M. C., Collins, T., &
 Applying modern psychometric techniques to melodic discrimination testing: 
 Item response theory, computerised adaptive testing, and automatic item generation. 
 Scientific Reports, 7, 1–18. https://doi.org/10.1038/s41598-017-03586-z.
-
-The implementation depends on a yet-to-be-released package, psychTestR. 
-We hope to release psychTestR in the coming months.
-In the meanwhile, if you would like to use the MDT for research purposes, 
-please contact Peter at p.m.c.harrison@qmul.ac.uk.
 
 This implementation can be cited using the following permanent link:
 https://doi.org/10.5281/zenodo.1300951 
@@ -30,11 +25,7 @@ For using the test in your own studies, we recommend local installation (see bel
 
 `install.packages('devtools')`
 
-4. Install psychTestR:
-
-`devtools::install_bitbucket('pmcharrison/psychTestR', auth_user = 'your_bitbucket_email_address', password = 'your_bitbucket_password')`
-
-5. Install the melody discrimination test:
+4. Install the melody discrimination test:
 
 `devtools::install_github('pmcharrison/mdt')`
 
