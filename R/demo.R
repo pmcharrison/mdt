@@ -5,7 +5,6 @@ demo_mdt <- function(num_items = 20L,
                      admin_password = "demo",
                      researcher_email = "p.m.c.harrison@qmul.ac.uk") {
   elts <- c(
-    psychTestR::one_button_page("Welcome to the MDT demo!"),
     mdt::mdt(num_items = num_items,
              take_training = take_training,
              feedback = feedback),
@@ -14,8 +13,8 @@ demo_mdt <- function(num_items = 20L,
 
   psychTestR::make_test(
     elts,
-    opt = psychTestR::pt_options(title = "MDT demo",
-                                 admin_password = admin_password,
-                                 researcher_email = researcher_email,
-                                 demo = TRUE))
+    opt = psychTestR::test_options(title = "MDT demo",
+                                   admin_password = admin_password,
+                                   researcher_email = researcher_email,
+                                   demo = TRUE))
 }
