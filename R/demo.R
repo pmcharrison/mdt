@@ -3,7 +3,8 @@ demo_mdt <- function(num_items = 20L,
                      take_training = TRUE,
                      feedback = mdt::mdt.feedback.simple_score(),
                      admin_password = "demo",
-                     researcher_email = "p.m.c.harrison@qmul.ac.uk") {
+                     researcher_email = "p.m.c.harrison@qmul.ac.uk",
+                     languages = mdt_languages()) {
   elts <- c(
     mdt::mdt(num_items = num_items,
              take_training = take_training,
@@ -16,5 +17,6 @@ demo_mdt <- function(num_items = 20L,
     opt = psychTestR::test_options(title = "MDT demo",
                                    admin_password = admin_password,
                                    researcher_email = researcher_email,
-                                   demo = TRUE))
+                                   demo = TRUE,
+                                   languages = languages))
 }

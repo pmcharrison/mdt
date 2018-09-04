@@ -10,7 +10,9 @@ mdt <- function(num_items = 20L,
                 constrain_answers = FALSE) {
   stopifnot(is.scalar.character(label), is.scalar.numeric(num_items),
             is.scalar.logical(take_training), is.scalar.character(media_dir),
-            is.null(feedback) || is(feedback, "test_element"))
+            psychTestR::is.timeline(feedback) ||
+              psychTestR::is.test_element(feedback) ||
+              is.null(feedback))
   media_dir <- gsub("/$", "", media_dir)
 
   c(
