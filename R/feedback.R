@@ -2,8 +2,7 @@
 mdt.feedback.no_score <- function(dict = mdt::dict) {
   psychTestR::new_timeline(
     psychTestR::one_button_page(
-      "TEset"
-      # shiny::HTML(psychTestR::i18n("AMDI_0014_I_0001_1"))
+      shiny::HTML(psychTestR::i18n("AMDI_0014_I_0001_1"))
     ),
     dict = dict
   )

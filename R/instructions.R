@@ -14,23 +14,36 @@ audio_ex_page <- function(prompt_id, url) {
 }
 
 instructions <- function(media_dir, num_items) {
-  psychTestR::new_timeline({
-    c(
-      info_page("AMDI_0001_I_0001_1"),
-      psychTestR::code_block(function(state, ...) {
-        psychTestR::set_local("do_intro", TRUE, state)
-      }),
-      psychTestR::loop_while(
-        test = function(state, ...) psychTestR::get_local("do_intro", state),
-        logic = c(
-          info_page("AMDI_0002_I_0001_1"),
-          audio_ex_page("AMDI_0003_I_0001_1", file.path(media_dir, "examples/ex1.mp3")),
-          info_page("AMDI_0004_I_0001_1"),
-          practice(media_dir),
-          ask_repeat()
-        )),
-      psychTestR::one_button_page(shiny::HTML(psychTestR::i18n(
-        "AMDI_0009_I_0001_1", sub = list(test_length = num_items)
-      )))
-    )})
+  c(
+    info_page("AMDI_0001_I_0001_1"),
+    psychTestR::code_block(function(state, ...) {
+      psychTestR::set_local("do_intro", TRUE, state)
+    }),
+    psychTestR::loop_while(
+      test = function(state, ...) psychTestR::get_local("do_intro", state),
+      logic = c(
+        info_page("AMDI_0002_I_0001_1"),
+        audio_ex_page("AMDI_0003_I_0001_1", file.path(media_dir, "examples/ex1.mp3")),
+        info_page("AMDI_0004_I_0001_1"),
+        practice(media_dir),
+        ask_repeat()
+      )),
+    psychTestR::one_button_page(shiny::HTML(psychTestR::i18n(
+      "AMDI_0009_I_0001_1", sub = list(test_length = num_items)
+    )))
+  )
+}
+
+ask_repeat <-function() {
+  psychTestR::NAFC_page(
+    label = "ask_repeat",
+    prompt = shiny::HTML(psychTestR::i18n("AMDI_0008_I_0001_1")),
+    choices = c("go_back", "continue"),
+    labels = psychTestR::i18n(c("AMDI_0008_R_0001_1", "AMDI_0008_R_0002_1")),
+    save_answer = FALSE,
+    arrange_vertically = TRUE,
+    on_complete = function(state, answer, ...) {
+      psychTestR::set_local("do_intro", identical(answer, "go_back"), state)
+    }
+  )
 }

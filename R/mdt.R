@@ -7,7 +7,8 @@ mdt <- function(num_items = 20L,
                 next_item.criterion = "bOpt",
                 next_item.estimator = "WL",
                 final_ability.estimator = "WL",
-                constrain_answers = FALSE) {
+                constrain_answers = FALSE,
+                dict = mdt::dict) {
   stopifnot(is.scalar.character(label), is.scalar.numeric(num_items),
             is.scalar.logical(take_training), is.scalar.character(media_dir),
             psychTestR::is.timeline(feedback) ||
@@ -15,13 +16,14 @@ mdt <- function(num_items = 20L,
               is.null(feedback))
   media_dir <- gsub("/$", "", media_dir)
 
-  c(
-    if (take_training) training(media_dir, num_items),
+  psychTestR::new_timeline(c(
+    if (take_training) instructions(media_dir, num_items),
     main_test(label = label, media_dir = media_dir, num_items = num_items,
               next_item.criterion = next_item.criterion,
               next_item.estimator = next_item.estimator,
               final_ability.estimator = final_ability.estimator,
               constrain_answers = constrain_answers),
     feedback
-  )
+  ),
+  dict = dict)
 }
