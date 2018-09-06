@@ -1,5 +1,5 @@
 info_page <- function(id) {
-  psychTestR::one_button_page(shiny::HTML(psychTestR::i18n(id)),
+  psychTestR::one_button_page(psychTestR::i18n(id),
                               button_text = psychTestR::i18n("AMDI_0016_I_0001_1"))
 }
 
@@ -34,12 +34,12 @@ instructions <- function(media_dir, num_items) {
   )
 }
 
-ask_repeat <-function() {
+ask_repeat <- function() {
   psychTestR::NAFC_page(
     label = "ask_repeat",
     prompt = shiny::HTML(psychTestR::i18n("AMDI_0008_I_0001_1")),
     choices = c("go_back", "continue"),
-    labels = psychTestR::i18n(c("AMDI_0008_R_0001_1", "AMDI_0008_R_0002_1")),
+    labels = lapply(c("AMDI_0008_R_0001_1", "AMDI_0008_R_0002_1"), psychTestR::i18n),
     save_answer = FALSE,
     arrange_vertically = TRUE,
     on_complete = function(state, answer, ...) {
