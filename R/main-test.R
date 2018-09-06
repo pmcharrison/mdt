@@ -74,12 +74,15 @@ get_item_path <- function(item, media_dir) {
 get_prompt <- function(item_number, num_items_in_test) {
   shiny::div(
     shiny::p(
-      "Question ",
-      shiny::strong(item_number),
-      " out of ",
-      shiny::strong(if (is.null(num_items_in_test)) "?" else num_items_in_test)),
+      psychTestR::i18n(
+        "AMDI_0011_I_0001_1",
+        sub = list(num_question = item_number,
+                   test_length = if (is.null(num_items_in_test))
+                     "?" else
+                       num_items_in_test))
+    ),
     shiny::p(
-      "Which melody was the odd one out?"
+      psychTestR::i18n("AMDI_0013_I_0001_1")
     ))
 }
 
