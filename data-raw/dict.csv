@@ -1,5 +1,5 @@
-﻿ID,DE,EN
-AMDI_0001_I_0001_1,Willkommen zum Melodie-Unterscheidungs-Test!,Welcome to the melodic memory test!
+ID,DE,EN
+AMDI_0001_I_0001_1,Willkommen zum Melodie-Unterscheidungs-Test!,Welcome to the melodic discrimination test!
 AMDI_0002_I_0001_1,"Bei diesem Test hörst du bei jedem Durchgang drei Versionen der gleichen Melodie.\\Jede Version ist in einer anderen Tonart, es wird also die gleiche Melodie gespielt, aber jedes Mal **eine Tonstufe** höher.\\Zusätzlich wurde bei einer der drei Versionen ein Ton verändert, d.h. die Melodie klingt ein bisschen anders als bei den anderen.\\Deine Aufgabe ist es, zu erkennen, bei welcher der drei Versionen ein Ton verändert wurde.","For each question of this test, you will hear three versions of the same tune.\\Each version will be at a **different pitch**, essentially the same tune but played one step higher each time.\\One of these three versions will be an **odd one out** – one of its notes will have been changed.\\Your task is to identify which one was the odd one out."
 AMDI_0003_I_0001_1,In diesem Beispiel wurde in der zweiten Version ein Ton verändert. ,"In this example, the second melody is the odd one out."
 AMDI_0004_I_0001_1,Jetzt bekommst du ein paar Beispiele zum Üben.\\Keine der Melodien wird dir bekannt sein. ,Now you will try a couple of practice questions yourself.\\ You won't have heard any of these melodies before.
@@ -18,4 +18,4 @@ AMDI_0014_I_0001_1,Du hast den Test beendet!,You finished the test!
 AMDI_0015_I_0001_1,Bitte klicke unten auf Beenden.,Please click below to finish.
 AMDI_0016_I_0001_1,Weiter,Next
 AMDI_0017_I_0001_1,Dein Ergebnis war:,Your score was:
-AMDI_0018_I_0001_1,Melodieunterscheidungsquotient (MUQ),Melodic Memory IQ
+AMDI_0018_I_0001_1,Melodieunterscheidungsquotient (MUQ),Melodic Discrimination IQ
