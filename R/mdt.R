@@ -26,7 +26,8 @@ mdt <- function(num_items = 20L,
                 final_ability.estimator = final_ability.estimator,
                 constrain_answers = constrain_answers)
       # feedback
-      stop("need to write method for c.test_element that produces timelines")
+      stop("new_timeline should be able to accept input lists that ",
+           "contain timelines")
     )},
     dict = dict)
 }
