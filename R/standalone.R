@@ -16,8 +16,8 @@ standalone_mdt <- function(num_items = 20L,
       psychTestR::final_page(shiny::p(
         psychTestR::i18n("results_have_been_saved"),
         psychTestR::i18n("you_may_close_browser")),
-      dict = dict
-    )
+        dict = dict
+      ))
   )
 
   psychTestR::make_test(
