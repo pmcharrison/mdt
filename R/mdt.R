@@ -8,7 +8,7 @@ mdt <- function(num_items = 20L,
                 next_item.estimator = "WL",
                 final_ability.estimator = "WL",
                 constrain_answers = FALSE,
-                dict = mdt::dict) {
+                dict = mdt::mdt_dict) {
   stopifnot(is.scalar.character(label), is.scalar.numeric(num_items),
             is.scalar.logical(take_training), is.scalar.character(media_dir),
             psychTestR::is.timeline(feedback) ||

@@ -1,5 +1,5 @@
 #' @export
-mdt.feedback.no_score <- function(dict = mdt::dict) {
+mdt.feedback.no_score <- function(dict = mdt::mdt_dict) {
   psychTestR::new_timeline(
     psychTestR::one_button_page(
       shiny::HTML(psychTestR::i18n("AMDI_0014_I_0001_1"))
@@ -9,7 +9,7 @@ mdt.feedback.no_score <- function(dict = mdt::dict) {
 }
 
 #' @export
-mdt.feedback.simple_score <- function(dict = mdt::dict) {
+mdt.feedback.simple_score <- function(dict = mdt::mdt_dict) {
   psychTestR::new_timeline(
     psychTestR::reactive_page(function(answer, ...) {
       psychTestR::one_button_page(shiny::div(

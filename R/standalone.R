@@ -12,7 +12,12 @@ standalone_mdt <- function(num_items = 20L,
              take_training = take_training,
              feedback = feedback),
     psychTestR::elt_save_results_to_disk(complete = TRUE),
-    psychTestR::final_page("Your results have been saved. You may now close the browser window.")
+    psychTestR::new_timeline(
+      psychTestR::final_page(shiny::p(
+        psychTestR::i18n("results_have_been_saved"),
+        psychTestR::i18n("you_may_close_browser")),
+      dict = dict
+    )
   )
 
   psychTestR::make_test(

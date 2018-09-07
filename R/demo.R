@@ -4,12 +4,17 @@ demo_mdt <- function(num_items = 20L,
                      feedback = mdt::mdt.feedback.simple_score(),
                      admin_password = "demo",
                      researcher_email = "p.m.c.harrison@qmul.ac.uk",
-                     languages = mdt_languages()) {
+                     languages = mdt_languages(),
+                     dict = mdt::mdt_dict) {
   elts <- c(
     mdt::mdt(num_items = num_items,
              take_training = take_training,
-             feedback = feedback),
-    psychTestR::final_page("You may now close the browser window.")
+             feedback = feedback,
+             dict = dict),
+    psychTestR::new_timeline(
+      psychTestR::final_page(psychTestR::i18n("you_may_close_browser")),
+      dict = dict
+    )
   )
 
   psychTestR::make_test(
