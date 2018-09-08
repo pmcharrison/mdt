@@ -6,7 +6,7 @@ info_page <- function(id) {
 audio_ex_page <- function(prompt_id, url) {
   psychTestR::audio_NAFC_page(
     label = "ex",
-    prompt = shiny::HTML(psychTestR::i18n(prompt_id)),
+    prompt = psychTestR::i18n(prompt_id),
     choices = psychTestR::i18n("AMDI_0016_I_0001_1"),
     url = url,
     save_answer = FALSE
@@ -28,9 +28,9 @@ instructions <- function(media_dir, num_items) {
         practice(media_dir),
         ask_repeat()
       )),
-    psychTestR::one_button_page(shiny::HTML(psychTestR::i18n(
+    psychTestR::one_button_page(psychTestR::i18n(
       "AMDI_0009_I_0001_1", sub = list(test_length = num_items)
-    )))
+    ))
   )
 }
 
