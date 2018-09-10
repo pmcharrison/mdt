@@ -1,7 +1,7 @@
 #' @export
 demo_mdt <- function(num_items = 20L,
                      take_training = TRUE,
-                     feedback = mdt::mdt.feedback.simple_score(),
+                     feedback = psychTestRCAT::cat.feedback.graph("MDT"),
                      admin_password = "demo",
                      researcher_email = "p.m.c.harrison@qmul.ac.uk",
                      languages = mdt_languages(),
