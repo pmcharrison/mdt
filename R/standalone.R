@@ -5,8 +5,7 @@ standalone_mdt <- function(num_items = 20L,
                            title = "Melody discrimination test",
                            admin_password = "replace-with-secure-password",
                            researcher_email = "p.m.c.harrison@qmul.ac.uk",
-                           languages = mdt_languages(),
-                           dict = mdt::mdt_dict) {
+                           languages = mdt_languages()) {
   elts <- c(
     psychTestR::get_p_id(),
     mdt::mdt(num_items = num_items,
@@ -16,8 +15,9 @@ standalone_mdt <- function(num_items = 20L,
     psychTestR::new_timeline(
       psychTestR::final_page(shiny::p(
         psychTestR::i18n("results_have_been_saved"),
-        psychTestR::i18n("you_may_close_browser"))
-      ), dict = dict)
+        psychTestR::i18n("you_may_close_browser")),
+        dict = dict
+      ))
   )
 
   psychTestR::make_test(
