@@ -110,7 +110,7 @@ where `shiny` is the username for the Shiny process user
 (this is the usual default).
 
 7. Navigate to your new shiny app, with a URL that looks like this:
-`http://my-web-page.org:3838/mdt
+http://my-web-page.org:3838/mdt
 
 ## Usage notes
 
