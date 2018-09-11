@@ -5,7 +5,8 @@ standalone_mdt <- function(num_items = 20L,
                            title = "Melody discrimination test",
                            admin_password = "replace-with-secure-password",
                            researcher_email = "p.m.c.harrison@qmul.ac.uk",
-                           languages = mdt_languages()) {
+                           languages = mdt_languages(),
+                           dict = mdt::mdt_dict) {
   elts <- c(
     psychTestR::get_p_id(),
     mdt::mdt(num_items = num_items,
