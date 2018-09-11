@@ -1,4 +1,4 @@
-# Melodic Discrimination Test (MDT) - v1.0.3
+# Melodic Discrimination Test (MDT) 
 
 Try the MDT here! http://shiny.pmcharrison.com/mdt-demo
 
