@@ -4,7 +4,6 @@ demo_mdt <- function(num_items = 20L,
                      feedback = psychTestRCAT::cat.feedback.graph("MDT"),
                      admin_password = "demo",
                      researcher_email = "p.m.c.harrison@qmul.ac.uk",
-                     languages = mdt_languages(),
                      dict = mdt::mdt_dict) {
   elts <- c(
     mdt::mdt(num_items = num_items,
@@ -23,5 +22,5 @@ demo_mdt <- function(num_items = 20L,
                                    admin_password = admin_password,
                                    researcher_email = researcher_email,
                                    demo = TRUE,
-                                   languages = languages))
+                                   languages = "EN"))
 }
