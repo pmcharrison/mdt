@@ -8,7 +8,11 @@ standalone_mdt <- function(num_items = 20L,
                            languages = mdt_languages(),
                            dict = mdt::mdt_dict) {
   elts <- c(
-    psychTestR::get_p_id(),
+    psychTestR::new_timeline(
+      psychTestR::get_p_id(prompt = psychTestR::i18n("enter_p_id"),
+                           button_text = psychTestR::i18n("AMDI_0016_I_0001_1")),
+      dict = dict
+    ),
     mdt::mdt(num_items = num_items,
              take_training = take_training,
              feedback = feedback),
