@@ -6,6 +6,9 @@ demo_mdt <- function(num_items = 20L,
                      researcher_email = "p.m.c.harrison@qmul.ac.uk",
                      dict = mdt::mdt_dict) {
   elts <- c(
+    psychTestR::new_timeline(psychTestR::one_button_page(
+      psychTestR::i18n("demo_intro")
+    ), dict = dict),
     mdt::mdt(num_items = num_items,
              take_training = take_training,
              feedback = feedback,

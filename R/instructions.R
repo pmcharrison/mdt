@@ -15,7 +15,6 @@ audio_ex_page <- function(prompt_id, url) {
 
 instructions <- function(media_dir, num_items) {
   c(
-    info_page("AMDI_0001_I_0001_1"),
     psychTestR::code_block(function(state, ...) {
       psychTestR::set_local("do_intro", TRUE, state)
     }),
