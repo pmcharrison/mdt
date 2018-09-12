@@ -21,4 +21,4 @@ practice <- function(media_dir) {
               shiny::p(shiny::HTML(psychTestR::i18n(
                 if (x$answer == "3") "AMDI_0012_I_0001_1" else "AMDI_0007_I_0001_1"
               )))
-            }))}))}))}
+            }), button_text = psychTestR::i18n("AMDI_0016_I_0001_1"))}))}))}

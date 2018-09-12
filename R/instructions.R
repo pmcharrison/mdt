@@ -29,7 +29,7 @@ instructions <- function(media_dir, num_items) {
       )),
     psychTestR::one_button_page(psychTestR::i18n(
       "AMDI_0009_I_0001_1", sub = list(test_length = num_items)
-    ))
+    ), button_text = psychTestR::i18n("AMDI_0016_I_0001_1"))
   )
 }
 
