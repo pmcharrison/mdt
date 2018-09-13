@@ -118,6 +118,17 @@ http://my-web-page.org:3838/mdt
 - By default, audio files are hosted online on our servers.
 The test therefore requires internet connectivity.
 
+## Implementation notes
+
+By default, the MDT implementation always estimates participant abilities
+using weighted-likelihood estimation.
+This differs from our validation study, 
+where online abilities were scored using Bayes modal estimation.
+We adopt weighted-likelihood estimation for this release 
+because this technique makes fewer assumptions about the participant group being tested.
+This makes the test better suited to testing with diverse participant groups
+(e.g. children, clinical populations).
+
 ## Example description for paper
 
 If you use the test in your own research, you could use the following
