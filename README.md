@@ -2,19 +2,25 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1300950.svg)](https://doi.org/10.5281/zenodo.1300950)
 
-Try the MDT here! http://shiny.pmcharrison.com/mdt-demo
+The MDT is an adaptive test of the ability to discriminate melodies.
+We invite you to try the test [here](http://shiny.pmcharrison.com/mdt-demo) and
+to read the paper [here](https://doi.org/10.1038/s41598-017-03586-z).
 
-This test is detailed in the following paper: Harrison, P. M. C., Collins, T., & Müllensiefen, D. (2017). 
+## Citation
+
+When using the MDT in your own research, you can cite the original MDT research paper:
+
+> Harrison, P. M. C., Collins, T., & Müllensiefen, D. (2017). 
 Applying modern psychometric techniques to melodic discrimination testing: 
 Item response theory, computerised adaptive testing, and automatic item generation. 
 Scientific Reports, 7, 1–18. https://doi.org/10.1038/s41598-017-03586-z.
 
-## Citation
+and this implementation:
 
-When using the MDT in your own research, you can cite the original MDT research paper above
-(Harrison et al., 2017). 
-When using this implementation, you can also cite this repository with the permanent DOI link
-https://doi.org/10.5281/zenodo.1300950.
+> Harrison, P. M. C., & Müllensiefen, D. (2018). 
+Melodic Discrimination Test (MDT), psychTestR implementation.
+https://doi.org/10.5281/zenodo.1300950
+
 We also advise mentioning the software versions you used,
 in particular the versions of the `mdt`, `psychTestR`, and `psychTestRCAT` packages.
 You can find these version numbers from R by running the following commands:
