@@ -9,13 +9,24 @@ Applying modern psychometric techniques to melodic discrimination testing:
 Item response theory, computerised adaptive testing, and automatic item generation. 
 Scientific Reports, 7, 1–18. https://doi.org/10.1038/s41598-017-03586-z.
 
-This implementation can be cited using the following permanent link:
-https://doi.org/10.5281/zenodo.1300950
+## Citation
 
-The demo version of the MDT  (http://shiny.pmcharrison.com/mdt-demo)
-gives you feedback after each question,
-but in real experiments this feedback is disabled.
-For using the test in your own studies, we recommend local installation (see below).
+When using the MDT in your own research, you can cite the original MDT research paper above
+(Harrison et al., 2017). 
+When using this implementation, you can also cite this repository with the permanent DOI link
+https://doi.org/10.5281/zenodo.1300950.
+We also advise mentioning the software versions you used,
+in particular the versions of the `mdt`, `psychTestR`, and `psychTestRCAT` packages.
+You can find these version numbers from R by running the following commands:
+
+``` r
+library(mdt)
+library(psychTestR)
+library(psychTestRCAT)
+if (!require(devtools)) install.packages("devtools")
+x <- devtools::session_info()
+x$packages[x$packages$package %in% c("mdt", "psychTestR", "psychTestRCAT"), ]
+```
 
 ## Installation instructions (local use)
 
