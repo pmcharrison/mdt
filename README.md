@@ -1,5 +1,7 @@
 # Melodic Discrimination Test (MDT) 
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1300950.svg)](https://doi.org/10.5281/zenodo.1300950)
+
 Try the MDT here! http://shiny.pmcharrison.com/mdt-demo
 
 This test is detailed in the following paper: Harrison, P. M. C., Collins, T., & Müllensiefen, D. (2017). 
