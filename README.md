@@ -19,7 +19,7 @@ Scientific Reports, 7, 1–18. https://doi.org/10.1038/s41598-017-03586-z.
 and this implementation:
 
 > Harrison, P. M. C., & Müllensiefen, D. (2018). 
-Melodic Discrimination Test (MDT), psychTestR implementation.
+Melodic Discrimination Test (MDT), psychTestR implementation. Zenodo.
 https://doi.org/10.5281/zenodo.1300950
 
 We also advise mentioning the software versions you used,
