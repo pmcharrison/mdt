@@ -8,7 +8,7 @@ Item response theory, computerised adaptive testing, and automatic item generati
 Scientific Reports, 7, 1–18. https://doi.org/10.1038/s41598-017-03586-z.
 
 This implementation can be cited using the following permanent link:
-https://doi.org/10.5281/zenodo.1300951 
+https://doi.org/10.5281/zenodo.1300950
 
 The demo version of the MDT  (http://shiny.pmcharrison.com/mdt-demo)
 gives you feedback after each question,
