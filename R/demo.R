@@ -1,21 +1,29 @@
 #' @export
-demo_mdt <- function(num_items = 20L,
+demo_mdt <- function(num_items = 10L,
                      take_training = TRUE,
-                     feedback = mdt::mdt.feedback.simple_score(),
+                     feedback = psychTestRCAT::cat.feedback.graph("MDT"),
                      admin_password = "demo",
-                     researcher_email = "p.m.c.harrison@qmul.ac.uk") {
+                     researcher_email = "p.m.c.harrison@qmul.ac.uk",
+                     dict = mdt::mdt_dict) {
   elts <- c(
-    psychTestR::one_button_page("Welcome to the MDT demo!"),
+    psychTestR::new_timeline(psychTestR::one_button_page(
+      psychTestR::i18n("demo_intro")
+    ), dict = dict),
     mdt::mdt(num_items = num_items,
              take_training = take_training,
-             feedback = feedback),
-    psychTestR::final_page("You may now close the browser window.")
+             feedback = feedback,
+             dict = dict),
+    psychTestR::new_timeline(
+      psychTestR::final_page(psychTestR::i18n("you_may_close_browser")),
+      dict = dict
+    )
   )
 
   psychTestR::make_test(
     elts,
-    opt = psychTestR::pt_options(title = "MDT demo",
-                                 admin_password = admin_password,
-                                 researcher_email = researcher_email,
-                                 demo = TRUE))
+    opt = psychTestR::test_options(title = "MDT demo",
+                                   admin_password = admin_password,
+                                   researcher_email = researcher_email,
+                                   demo = TRUE,
+                                   languages = "EN"))
 }

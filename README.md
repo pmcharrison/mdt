@@ -1,4 +1,4 @@
-# Melodic Discrimination Test (MDT) - v1.0.3
+# Melodic Discrimination Test (MDT) 
 
 Try the MDT here! http://shiny.pmcharrison.com/mdt-demo
 
@@ -110,13 +110,24 @@ where `shiny` is the username for the Shiny process user
 (this is the usual default).
 
 7. Navigate to your new shiny app, with a URL that looks like this:
-`http://my-web-page.org:3838/mdt
+http://my-web-page.org:3838/mdt
 
 ## Usage notes
 
 - The MDT runs in your web browser.
 - By default, audio files are hosted online on our servers.
 The test therefore requires internet connectivity.
+
+## Implementation notes
+
+By default, the MDT implementation always estimates participant abilities
+using weighted-likelihood estimation.
+This differs from our validation study, 
+where online abilities were scored using Bayes modal estimation.
+We adopt weighted-likelihood estimation for this release 
+because this technique makes fewer assumptions about the participant group being tested.
+This makes the test better suited to testing with diverse participant groups
+(e.g. children, clinical populations).
 
 ## Example description for paper
 

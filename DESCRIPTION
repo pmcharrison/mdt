@@ -1,13 +1,21 @@
 Package: mdt
 Title: Testing Melodic Discrimination Abilities
-Version: 1.0.3
+Version: 1.1.0
 Authors@R: person("Peter", "Harrison", email = "pmc.harrison@gmail.com", role = c("aut", "cre"))
 Description: R implementation of the adaptive Melodic Discrimination Test of Harrison, Collins, and Mullensiefen (2017). This test is detailed in the following paper: Harrison, P. M. C., Collins, T., & Müllensiefen, D. (2017). Applying modern psychometric techniques to melodic discrimination testing: Item response theory, computerised adaptive testing, and automatic item generation. Scientific Reports, 7, 1–18. https://doi.org/10.1038/s41598-017-03586-z.
 Depends: R (>= 3.4.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: psychTestR, psychTestRCAT, htmltools, methods, plyr, shiny, utils
-Suggests: testthat
-RoxygenNote: 6.0.1
+Imports: 
+    psychTestR (>= 2.0.0),
+    psychTestRCAT (>= 1.0.2),
+    htmltools (>= 0.3.6),
+    methods,
+    plyr (>= 1.8.4),
+    shiny (>= 1.1.0),
+    utils
+Suggests: 
+    testthat (>= 2.0.0)
+RoxygenNote: 6.1.0
 Remotes: pmcharrison/psychTestR, pmcharrison/psychTestRCAT

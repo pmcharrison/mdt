@@ -3,7 +3,7 @@ main_test <- function(label, media_dir, num_items,
                       next_item.estimator,
                       final_ability.estimator,
                       constrain_answers) {
-  item_bank <- get_item_bank(media_dir)
+  item_bank <- get_item_bank()
   psychTestRCAT::adapt_test(
     label = label,
     item_bank = item_bank,
@@ -26,7 +26,7 @@ show_item <- function(media_dir) {
       label = paste0("q", item_number),
       prompt = get_prompt(item_number, num_items_in_test),
       choices = get_choices(),
-      url = get_item_path(item),
+      url = get_item_path(item, media_dir),
       admin_ui = get_admin_ui(item),
       save_answer = FALSE,
       wait = TRUE,
@@ -42,8 +42,7 @@ get_admin_ui <- function(item) {
                  "answer",
                  "contour",
                  "tonality",
-                 "num_notes",
-                 "url")]
+                 "num_notes")]
   names(df) <- plyr::revalue(
     names(df),
     c(
@@ -51,8 +50,7 @@ get_admin_ui <- function(item) {
       answer = "Correct answer",
       contour = "Contour",
       tonality = "Tonality",
-      num_notes = "Melody length (notes)",
-      url = "URL"
+      num_notes = "Melody length (notes)"
     ))
   tab <- htmltools::tags$table(
     lapply(seq_along(df),
@@ -67,20 +65,24 @@ get_admin_ui <- function(item) {
   )
 }
 
-get_item_path <- function(item) {
+get_item_path <- function(item, media_dir) {
   stopifnot(is(item, "item"), nrow(item) == 1L)
-  item$url
+  file.path(media_dir, "item_bank/audio_stimuli",
+            paste(item$file_name, "mp3", sep = "."))
 }
 
 get_prompt <- function(item_number, num_items_in_test) {
   shiny::div(
     shiny::p(
-      "Question ",
-      shiny::strong(item_number),
-      " out of ",
-      shiny::strong(if (is.null(num_items_in_test)) "?" else num_items_in_test)),
+      psychTestR::i18n(
+        "AMDI_0011_I_0001_1",
+        sub = list(num_question = item_number,
+                   test_length = if (is.null(num_items_in_test))
+                     "?" else
+                       num_items_in_test))
+    ),
     shiny::p(
-      "Which melody was the odd one out?"
+      psychTestR::i18n("AMDI_0013_I_0001_1")
     ))
 }
 
