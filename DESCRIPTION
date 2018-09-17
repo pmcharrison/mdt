@@ -7,15 +7,15 @@ Depends: R (>= 3.4.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: 
+Imports:
     psychTestR (>= 2.0.0),
-    psychTestRCAT (>= 1.0.2),
+    psychTestRCAT (>= 1.1.0),
     htmltools (>= 0.3.6),
     methods,
     plyr (>= 1.8.4),
     shiny (>= 1.1.0),
     utils
-Suggests: 
+Suggests:
     testthat (>= 2.0.0)
 RoxygenNote: 6.1.0
 Remotes: pmcharrison/psychTestR, pmcharrison/psychTestRCAT
