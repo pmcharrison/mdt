@@ -1,3 +1,7 @@
+# mdt 1.3.0
+
+* Adding French support
+
 # mdt 1.2.0
 
 * Introducing compile_trial_by_trial_results()
