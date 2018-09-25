@@ -26,7 +26,6 @@ demo_mdt <- function(num_items = 10L,
       psychTestR::i18n("demo_intro")
     ), dict = dict),
     mdt::mdt(num_items = num_items,
-             take_training = take_training,
              feedback = feedback,
              dict = dict,
              ...),

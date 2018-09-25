@@ -1,3 +1,8 @@
+* The package is now properly documented.
+* Change to default arguments for `cabat()`, `demo_cabat()`,
+and `standalone_cabat()`: 
+`next_item.estimator` now defaults to `'BM'`, not `'WL'`.
+
 # mdt 1.3.0
 
 * Adding French support
