@@ -34,9 +34,9 @@ See the \code{criterion} argument in \code{\link[catR]{nextItem}} for possible v
 Ability estimation method used for selecting successive items in the adaptive test.
 See the \code{method} argument in \code{\link[catR]{thetaEst}} for possible values.
 \code{"BM"}, Bayes modal,
-corresponds to the setting used in the original CA-BAT paper.
+corresponds to the setting used in the original MDT paper.
 \code{"WL"}, weighted likelihood,
-corresponds to the default setting used in versions <= 0.3.0 of this package.}
+corresponds to the default setting used in versions <= 1.3.0 of this package.}
 
 \item{next_item.prior_dist}{(Character scalar)
 The type of prior distribution to use when calculating ability estimates
@@ -54,7 +54,7 @@ The dfeault is \code{c(0, 1)}.}
 \item{final_ability.estimator}{Estimation method used for the final ability estimate.
 See the \code{method} argument in \code{\link[catR]{thetaEst}} for possible values.
 The default is \code{"WL"}, weighted likelihood,
-which corresponds to the setting used in the original CA-BAT paper.
+which corresponds to the setting used in the original MDT paper.
 If a Bayesian method is chosen, its prior distribution will be defined
 by the \code{next_item.prior_dist} and \code{next_item.prior_par} arguments.}
 
