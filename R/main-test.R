@@ -1,6 +1,7 @@
 main_test <- function(label, media_dir, num_items,
                       next_item.criterion,
                       next_item.estimator,
+                      next_item.prior_par,
                       final_ability.estimator,
                       constrain_answers) {
   item_bank <- get_item_bank()
@@ -11,6 +12,7 @@ main_test <- function(label, media_dir, num_items,
     stopping_rule = psychTestRCAT::stopping_rule.num_items(n = num_items),
     opt = mdt.options(next_item.criterion = next_item.criterion,
                       next_item.estimator = next_item.estimator,
+                      next_item.prior_par = next_item.prior_par,
                       final_ability.estimator = final_ability.estimator,
                       constrain_answers = constrain_answers,
                       item_bank = item_bank)
