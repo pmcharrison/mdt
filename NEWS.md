@@ -1,3 +1,10 @@
+# mdt 2.0.0
+
+* The package is now properly documented.
+* Change to default arguments for `mdt()`, `demo_mdt()`,
+and `standalone_mdt()`: 
+`next_item.estimator` now defaults to `'BM'`, not `'WL'`.
+
 # mdt 1.3.0
 
 * Adding French support

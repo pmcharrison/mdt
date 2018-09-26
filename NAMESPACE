@@ -2,7 +2,6 @@
 
 export(compile_trial_by_trial_results)
 export(demo_mdt)
-export(get_item_bank)
 export(mdt)
 export(mdt.feedback.no_score)
 export(mdt.feedback.simple_score)
