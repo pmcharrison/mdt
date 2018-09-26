@@ -17,7 +17,7 @@
 #' @export
 standalone_mdt <- function(title = "Melody discrimination test",
                            admin_password = "replace-with-secure-password",
-                           researcher_email = "p.m.c.harrison@qmul.ac.uk",
+                           researcher_email = NULL,
                            languages = mdt_languages(),
                            dict = mdt::mdt_dict,
                            ...) {
