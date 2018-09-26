@@ -6,8 +6,8 @@
 \usage{
 standalone_mdt(title = "Melody discrimination test",
   admin_password = "replace-with-secure-password",
-  researcher_email = "p.m.c.harrison@qmul.ac.uk",
-  languages = mdt_languages(), dict = mdt::mdt_dict, ...)
+  researcher_email = NULL, languages = mdt_languages(),
+  dict = mdt::mdt_dict, ...)
 }
 \arguments{
 \item{title}{(Scalar character) Title to display during testing.}
