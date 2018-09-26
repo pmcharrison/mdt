@@ -171,14 +171,11 @@ The test therefore requires internet connectivity.
 
 ## Implementation notes
 
-By default, the MDT implementation always estimates participant abilities
-using weighted-likelihood estimation.
-This differs from our validation study, 
-where online abilities were scored using Bayes modal estimation.
-We adopt weighted-likelihood estimation for this release 
-because this technique makes fewer assumptions about the participant group being tested.
-This makes the test better suited to testing with diverse participant groups
-(e.g. children, clinical populations).
+Versions <= 1.3.0 of this package experimented with weighted likelihood
+ability estimation for item selection.
+However, current versions of the package revert to Bayes modal
+ability estimation for item selection,
+for consistency with the original MDT paper.
 
 ## Example description for paper
 
