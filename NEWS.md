@@ -1,3 +1,5 @@
+# mdt 2.2.0
+
 * Updated to latest psychTestR dictionary version.
 
 # mdt 2.1.0
