@@ -1,3 +1,7 @@
+# mdt 2.1.0
+
+* Added Russian support.
+
 # mdt 2.0.0
 
 * The package is now properly documented.
