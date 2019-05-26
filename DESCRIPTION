@@ -16,6 +16,7 @@ Imports:
     shiny (>= 1.1.0),
     utils
 Suggests:
-    testthat (>= 2.0.0)
-RoxygenNote: 6.1.0
+    testthat (>= 2.0.0),
+    usethis
+RoxygenNote: 6.1.1
 Remotes: pmcharrison/psychTestR, pmcharrison/psychTestRCAT
