@@ -1,3 +1,5 @@
+* Updated to latest psychTestR dictionary version.
+
 # mdt 2.1.0
 
 * Added Russian support.
