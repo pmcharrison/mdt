@@ -37,7 +37,7 @@ x$packages[x$packages$package %in% c("mdt", "psychTestR", "psychTestRCAT"), ]
 
 ## Acknowledgements
 
-We are grateful to the following individuals for translating the CA-BAT
+We are grateful to the following individuals for translating the MDT
 into new languages:
 
 - Pauline Larrouy-Maestri (French)
