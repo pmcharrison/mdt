@@ -1,3 +1,9 @@
+# mdt 2.2.1
+
+* Added acknowledgements.
+* Removed dependency on deprecated psychTestR function.
+* Added Russian to the list of default languages.
+
 # mdt 2.2.0
 
 * Updated to latest psychTestR dictionary version.

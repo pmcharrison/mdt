@@ -35,6 +35,15 @@ x <- devtools::session_info()
 x$packages[x$packages$package %in% c("mdt", "psychTestR", "psychTestRCAT"), ]
 ```
 
+## Acknowledgements
+
+We are grateful to the following individuals for translating the CA-BAT
+into new languages:
+
+- Pauline Larrouy-Maestri (French)
+- Dania Hollemann, Klaus Frieler, Daniel Müllensiefen (German)
+- Elina Tsigeman and Maxim Likhanov (Russian)
+
 ## Installation instructions (local use)
 
 1. If you don't have R installed, install it from here: https://cloud.r-project.org/
