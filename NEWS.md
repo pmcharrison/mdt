@@ -1,3 +1,5 @@
+* Switched audio from HTTP to HTTPS.
+
 # mdt 2.2.1
 
 * Added acknowledgements.
