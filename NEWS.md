@@ -1,3 +1,5 @@
+* Extending feedback options.
+
 # mdt 2.2.2
 
 * Switched audio from HTTP to HTTPS.

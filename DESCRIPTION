@@ -9,7 +9,7 @@ Encoding: UTF-8
 LazyData: true
 Imports:
     psychTestR (>= 2.8.0),
-    psychTestRCAT (>= 1.5.1),
+    psychTestRCAT (>= 1.6.0),
     htmltools (>= 0.3.6),
     methods,
     plyr (>= 1.8.4),

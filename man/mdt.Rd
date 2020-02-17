@@ -19,8 +19,20 @@ mdt(num_items = 20L, take_training = TRUE, label = "MDT",
 
 \item{label}{(Character scalar) Label to give the MDT results in the output file.}
 
-\item{feedback}{(Function) Defines the feedback to give the participant
-at the end of the test. By default no feedback is given.}
+\item{feedback}{Defines the feedback to give the participant
+at the end of the test. By default no feedback is given.
+This can be a timeline segment (as created by \code{\link[psychTestRCAT]{new_timeline}}),
+a test element (as created by e.g. \code{\link[psychTestRCAT]{page}}),
+or a list of test elements.
+The following built-in choices are available
+see function-level documentation for details):
+\itemize{
+\item \code{\link{mdt.feedback.no_score}}
+\item \code{\link{mdt.feedback.simple_score}}
+\item \code{\link[psychTestRCAT]{cat.feedback.graph}}
+\item \code{\link[psychTestRCAT]{cat.feedback.irt}}
+\item \code{\link[psychTestRCAT]{cat.feedback.iq}}
+}}
 
 \item{media_dir}{(Character scalar) File path to the directory
 hosting the test's media files (typically a publicly accessible web directory).}

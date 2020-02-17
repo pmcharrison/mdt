@@ -11,8 +11,20 @@
 #' @param num_items (Integer scalar) Number of items in the test.
 #' @param take_training (Logical scalar) Whether to include the training phase.
 #' @param label (Character scalar) Label to give the MDT results in the output file.
-#' @param feedback (Function) Defines the feedback to give the participant
+#'
+#' @param feedback Defines the feedback to give the participant
 #' at the end of the test. By default no feedback is given.
+#' This can be a timeline segment (as created by \code{\link[psychTestRCAT]{new_timeline}}),
+#' a test element (as created by e.g. \code{\link[psychTestRCAT]{page}}),
+#' or a list of test elements.
+#' The following built-in choices are available
+#' see function-level documentation for details):
+#' - \code{\link{mdt.feedback.no_score}}
+#' - \code{\link{mdt.feedback.simple_score}}
+#' - \code{\link[psychTestRCAT]{cat.feedback.graph}}
+#' - \code{\link[psychTestRCAT]{cat.feedback.irt}}
+#' - \code{\link[psychTestRCAT]{cat.feedback.iq}}
+#'
 #' @param media_dir (Character scalar) File path to the directory
 #' hosting the test's media files (typically a publicly accessible web directory).
 #' @param next_item.criterion (Character scalar)
@@ -54,6 +66,8 @@
 #' However, current versions of the package revert to Bayes modal
 #' ability estimation for item selection,
 #' for consistency with the original MDT paper.
+#'
+#' @md
 #' @export
 mdt <- function(num_items = 20L,
                 take_training = TRUE,
@@ -75,8 +89,8 @@ mdt <- function(num_items = 20L,
               is.null(feedback))
   media_dir <- gsub("/$", "", media_dir)
 
-  psychTestR::new_timeline({
-    c(
+  psychTestR::join(
+    psychTestR::new_timeline(psychTestR::join(
       if (take_training) instructions(media_dir, num_items),
       main_test(label = label, media_dir = media_dir, num_items = num_items,
                 next_item.criterion = next_item.criterion,
@@ -84,8 +98,8 @@ mdt <- function(num_items = 20L,
                 next_item.prior_dist = next_item.prior_dist,
                 next_item.prior_par = next_item.prior_par,
                 final_ability.estimator = final_ability.estimator,
-                constrain_answers = constrain_answers),
-      feedback
-    )},
-    dict = dict)
+                constrain_answers = constrain_answers)
+    ), dict = dict),
+    feedback
+  )
 }
