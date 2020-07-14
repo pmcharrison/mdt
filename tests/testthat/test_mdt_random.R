@@ -53,11 +53,13 @@ for (i in sample(1:3, number_items, replace=TRUE)){
 app$expect_ui_text("You finished the test! Next")
 app$click_next()
 
-# Results
-results <- app$get_results() %>% as.list()
-print(j)
-MDT_SEM[j] <<- results[["MDT"]][["ability_sem"]]
-MDT_ability[j] <<- results[["MDT"]][["ability"]]
+if (FALSE) {
+  # Results
+  results <- app$get_results() %>% as.list()
+  MDT_ability_sem <<- results[["MDT"]][["ability_sem"]]
+  MDT_ability <<- results[["MDT"]][["ability"]]
 
-print(paste("Standard error of measurement of MDT", MDT_SEM[j]))
+  print(paste("Standard error of measurement of MDT", MDT_ability_sem))
+}
+
 app$stop()
