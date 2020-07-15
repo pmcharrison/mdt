@@ -2,7 +2,7 @@
 library(psychTestR)
 library(testthat)
 
-dir <- system.file("", package = "mdt", mustWork = TRUE)
+dir <- system.file("MDT", package = "mdt", mustWork = TRUE)
 
 number_items <- 18 #number of items
 
