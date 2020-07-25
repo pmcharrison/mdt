@@ -4,13 +4,20 @@
 \alias{mdt}
 \title{MDT}
 \usage{
-mdt(num_items = 20L, take_training = TRUE, label = "MDT",
+mdt(
+  num_items = 20L,
+  take_training = TRUE,
+  label = "MDT",
   feedback = mdt.feedback.no_score(),
   media_dir = "http://media.gold-msi.org/test_materials/MDT/v4",
-  next_item.criterion = "bOpt", next_item.estimator = "BM",
-  next_item.prior_dist = "norm", next_item.prior_par = c(0, 1),
-  final_ability.estimator = "WL", constrain_answers = FALSE,
-  dict = mdt::mdt_dict)
+  next_item.criterion = "bOpt",
+  next_item.estimator = "BM",
+  next_item.prior_dist = "norm",
+  next_item.prior_par = c(0, 1),
+  final_ability.estimator = "WL",
+  constrain_answers = FALSE,
+  dict = mdt::mdt_dict
+)
 }
 \arguments{
 \item{num_items}{(Integer scalar) Number of items in the test.}
