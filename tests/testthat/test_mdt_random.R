@@ -46,7 +46,7 @@ q <- 1 # Number of question
 for (i in sample(1:3, number_items, replace=TRUE)){
   app$expect_ui_text(paste("Question", q, "out of", number_items, "Which melody was the odd one out? Click here to play 1 2 3"))
   app$click(i)
-  print(paste("answer id =", i))
+  if (interactive()) print(paste("answer id =", i))
   q <- q + 1
 }
 
