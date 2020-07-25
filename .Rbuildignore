@@ -4,3 +4,4 @@
 ^installation-instructions.txt$
 ^output$
 ^data-raw$
+^\.travis\.yml$
