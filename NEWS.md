@@ -1,3 +1,5 @@
+# mdt 2.4.0
+
 * Added a basic regression test (thanks Viola Pausch!).
 
 # mdt 2.3.0
