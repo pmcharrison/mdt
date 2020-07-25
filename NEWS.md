@@ -1,3 +1,5 @@
+* Added a basic regression test (thanks Viola Pausch!).
+
 # mdt 2.3.0
 
 * Extending feedback options.
