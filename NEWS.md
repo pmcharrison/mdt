@@ -1,3 +1,5 @@
+* Updated `compile_trial_by_trial_results` documentation.
+
 # mdt 2.4.0
 
 * Added a basic regression test (thanks Viola Pausch!).
