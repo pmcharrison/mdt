@@ -1,3 +1,5 @@
+# mdt 2.4.1
+
 * Updated `compile_trial_by_trial_results` documentation.
 
 # mdt 2.4.0
