@@ -1,3 +1,5 @@
+* Added formal German support (thanks Klaus Frieler!).
+
 # mdt 2.5.0
 
 * Added Italian support (thanks Elvira Brattico!).

@@ -6,7 +6,8 @@ mdt_languages <- function() {
   c(
     English = "en",
     French = "fr",
-    German = "de",
+    `German (informal)` = "de",
+    `German (formal)` = "de_f",
     Italian = "it",
     Russian = "ru"
   )

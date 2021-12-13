@@ -1,0 +1,25 @@
+ID,DE_F
+AMDI_0001_I_0001_1,Willkommen zum Melodie-Unterscheidungs-Test!
+AMDI_0002_I_0001_1,"Bei diesem Test hören Sie  bei jedem Durchgang drei Versionen der gleichen Melodie.\\Jede Version ist in einer anderen Tonart, es wird also die gleiche Melodie gespielt, aber jedes Mal **eine Tonstufe** höher.\\Zusätzlich wurde bei einer der drei Versionen ein Ton verändert, d.h. ie Melodie klingt ein wenig anders als bei den anderen.\\Ihre  Aufgabe ist es, zu erkennen, bei welcher der drei Versionen ein Ton verändert wurde."
+AMDI_0003_I_0001_1,In diesem Beispiel wurde in der zweiten Version ein Ton verändert.
+AMDI_0004_I_0001_1,Jetzt bekommem Sie ein paar Beispiele zum Üben.\\Keine der Melodien wird Ihnen bekannt sein.
+AMDI_0005_I_0001_1,Bei welcher Version wurde ein Ton verändert?
+AMDI_0006_I_0001_1,**Richtig!**
+AMDI_0007_I_0001_1,Die erste Version wurde verändert.
+AMDI_0008_I_0001_1,"Möchten Sie zurückgehen, um die Anleitung und Beispiele nochmal zu sehen?"
+AMDI_0008_R_0001_1,"Ja, zurück."
+AMDI_0008_R_0002_1,"Nein, ich bin bereit, fortzufahren."
+AMDI_0009_I_0001_1,"Jetzt beginnt der Haupttest, bei dem Sie {{test_length}} ähnliche Aufgaben lösen sollen, wie Sie sie gerade versucht haben.\\Einige der Melodien sind etwas länger und die Aufgabe ist etwas schwieriger.\\ Es macht aber nichts, wenn Sie die Antwort nicht wissen. Entscheide Sie dann einfach aus dem Bauch heraus."
+AMDI_0010_I_0001_1,**Falsch.**
+AMDI_0011_I_0001_1,Frage **{{num_question}}** von **{{test_length}}**
+AMDI_0012_I_0001_1,Die dritte Version wurde verändert.
+AMDI_0013_I_0001_1,Bei welcher Version wurde ein Ton verändert?
+AMDI_0014_I_0001_1,Sie haben Test beendet!
+AMDI_0015_I_0001_1,Bitte klicken Sie unten auf Beenden.
+AMDI_0016_I_0001_1,Weiter
+AMDI_0017_I_0001_1,Ihr Ergebnis war:
+AMDI_0018_I_0001_1,Melodieunterscheidungsquotient (MUQ)
+enter_p_id,Bitte geben Sie Ihre Teilnehmer-ID ein.
+results_have_been_saved,Ihre Ergebnisse sind gespeichert.
+you_may_close_browser,Sie können dieses Fenster jetzt schließen.
+demo_intro,"Willkommen zum **Melodie-Unterscheidungstest**!\\Dieser Test passt sich an Ihre Leistung an. Je mehr richtige Antworten Sie geben, desto schwieriger werden die nächsten Stimuli.\\In echten Testanwendungen läuft dieser adaptiver Mechanismus unsichtbar im Hintergrund. Aber in dieser Demoanwendung werden Ihnen bei jedem Durchgang Ihre geschätzte Testfähigkeit (""ability"") und die Schwierigkeit des Stimulus (""difficulty"") angezeigt."
