@@ -1,3 +1,5 @@
+# mdt 2.5.0
+
 * Added Italian support (thanks Elvira Brattico!).
 
 # mdt 2.4.1
