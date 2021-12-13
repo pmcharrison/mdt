@@ -1,3 +1,11 @@
+# mdt 2.6.0
+
+* Added formal German support (thanks Klaus Frieler!).
+
+# mdt 2.5.0
+
+* Added Italian support (thanks Elvira Brattico!).
+
 # mdt 2.4.1
 
 * Updated `compile_trial_by_trial_results` documentation.
