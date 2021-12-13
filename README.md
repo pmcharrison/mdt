@@ -44,6 +44,7 @@ into new languages:
 - Pauline Larrouy-Maestri (French)
 - Dania Hollemann, Klaus Frieler, Daniel Müllensiefen (German)
 - Elina Tsigeman and Maxim Likhanov (Russian)
+- Elvira Brattico (Italian)
 
 ## Installation instructions (local use)
 
@@ -205,6 +206,23 @@ paragraphs as a template for describing the test in your subsequent write-up.
 
 > We used an implementation of the melodic discrimination test provided by the original researchers and available at https://doi.org/10.5281/zenodo.1300951. Participants complete the test at a computer, using a mouse to select responses. The test uses an adaptive item selection procedure, administering harder items to higher-ability participants and easier items to lower-ability participants. Participant abilities are estimated using Item Response Theory (de Ayala, 2009). We used the test with default settings: length of 20 items, computing intermediate and final abilities with weighted-likelihood estimation, and using Urry's rule for item selection
 (Magis & Gilles, 2012).
+
+## Adding new languages
+
+See `data-raw/dict-russian.csv` for an example of a foreign-language dictionary.
+Create a new dictionary for your new language following this format.
+Prepare a merge request for submitting your changes, 
+perhaps using a fork of the original repository.
+Place the file in `data-raw`.
+Update `data-raw/mdt-dict.R`, adding a new four-line section for your new language,
+following the lines used to add previous languages.
+Run the file and commit the changes to Git.
+Update the `mdt_languages` function in `languages.R` to include the new language.
+Update the languages section in `README.md` to credit the translator.
+Rebuild the R package locally and test that you can use the test with
+your new translations.
+Submit your changes as a merge request.
+
 
 ## References:
 
