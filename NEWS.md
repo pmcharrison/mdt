@@ -1,3 +1,5 @@
+* Typo fixes in formal German (thanks Klaus Frieler!).
+
 # mdt 2.6.0
 
 * Added formal German support (thanks Klaus Frieler!).

@@ -1,6 +1,6 @@
 ID,DE_F
 AMDI_0001_I_0001_1,Willkommen zum Melodie-Unterscheidungs-Test!
-AMDI_0002_I_0001_1,"Bei diesem Test hören Sie  bei jedem Durchgang drei Versionen der gleichen Melodie.\\Jede Version ist in einer anderen Tonart, es wird also die gleiche Melodie gespielt, aber jedes Mal **eine Tonstufe** höher.\\Zusätzlich wurde bei einer der drei Versionen ein Ton verändert, d.h. ie Melodie klingt ein wenig anders als bei den anderen.\\Ihre  Aufgabe ist es, zu erkennen, bei welcher der drei Versionen ein Ton verändert wurde."
+AMDI_0002_I_0001_1,"Bei diesem Test hören Sie  bei jedem Durchgang drei Versionen der gleichen Melodie.\\Jede Version ist in einer anderen Tonart, es wird also die gleiche Melodie gespielt, aber jedes Mal **eine Tonstufe** höher.\\Zusätzlich wurde bei einer der drei Versionen ein Ton verändert, d.h. die Melodie klingt ein wenig anders als bei den anderen.\\Ihre  Aufgabe ist es, zu erkennen, bei welcher der drei Versionen ein Ton verändert wurde."
 AMDI_0003_I_0001_1,In diesem Beispiel wurde in der zweiten Version ein Ton verändert.
 AMDI_0004_I_0001_1,Jetzt bekommem Sie ein paar Beispiele zum Üben.\\Keine der Melodien wird Ihnen bekannt sein.
 AMDI_0005_I_0001_1,Bei welcher Version wurde ein Ton verändert?
@@ -9,7 +9,7 @@ AMDI_0007_I_0001_1,Die erste Version wurde verändert.
 AMDI_0008_I_0001_1,"Möchten Sie zurückgehen, um die Anleitung und Beispiele nochmal zu sehen?"
 AMDI_0008_R_0001_1,"Ja, zurück."
 AMDI_0008_R_0002_1,"Nein, ich bin bereit, fortzufahren."
-AMDI_0009_I_0001_1,"Jetzt beginnt der Haupttest, bei dem Sie {{test_length}} ähnliche Aufgaben lösen sollen, wie Sie sie gerade versucht haben.\\Einige der Melodien sind etwas länger und die Aufgabe ist etwas schwieriger.\\ Es macht aber nichts, wenn Sie die Antwort nicht wissen. Entscheide Sie dann einfach aus dem Bauch heraus."
+AMDI_0009_I_0001_1,"Jetzt beginnt der Haupttest, bei dem Sie {{test_length}} ähnliche Aufgaben lösen sollen, wie Sie sie gerade versucht haben.\\Einige der Melodien sind etwas länger und die Aufgabe ist etwas schwieriger.\\ Es macht aber nichts, wenn Sie die Antwort nicht wissen. Entscheiden Sie dann einfach aus dem Bauch heraus."
 AMDI_0010_I_0001_1,**Falsch.**
 AMDI_0011_I_0001_1,Frage **{{num_question}}** von **{{test_length}}**
 AMDI_0012_I_0001_1,Die dritte Version wurde verändert.
