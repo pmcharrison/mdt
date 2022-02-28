@@ -19,5 +19,12 @@ stopifnot(!anyDuplicated(input$key),
           all(input$key == german_formal$key))
 input$DE_F <- german_formal$DE_F
 
+spanish <- read.csv("data-raw/dict-spanish.csv", stringsAsFactors = FALSE)
+names(spanish)[[1]] <- "key"
+stopifnot(!anyDuplicated(input$key),
+          all(input$key == spanish$key))
+input$ES <- spanish$ES
+
+
 mdt_dict <- psychTestR::i18n_dict$new(input)
 usethis::use_data(mdt_dict, overwrite = TRUE)

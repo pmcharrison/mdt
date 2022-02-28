@@ -1,0 +1,25 @@
+ID,ES
+AMDI_0001_I_0001_1,¡Bienvenido/a al test de discriminación melódica!
+AMDI_0002_I_0001_1,"Para cada pregunta de esta prueba, escucharás tres versiones de la misma melodía. \\ Cada versión se reproducirá en un **tono diferente**, la melodía es esencialmente la misma pero se reproduce un tono cada vez más alto. \\ Una de estas tres versiones será **el intruso** - una de sus notas ha sido cambiada. \\ Tu tarea es identificar cuál es el intruso."
+AMDI_0003_I_0001_1,"En este ejemplo, la segunda melodía es el intruso."
+AMDI_0004_I_0001_1,Ahora practicarás con un par de preguntas de prueba por tu cuenta. \\ Nunca habrás escuchado ninguna de estas melodías antes.
+AMDI_0005_I_0001_1,¿Qué melodía era el intruso?
+AMDI_0006_I_0001_1,¡Correcto!
+AMDI_0007_I_0001_1,La primera melodía era el intruso.
+AMDI_0008_I_0001_1,¿Quieres volver atrás a ver las instrucciones y practicar con las preguntas?
+AMDI_0008_R_0001_1,"Sì, vuelve atrás"
+AMDI_0008_R_0002_1,"No, estoy listo/a para continuar"
+AMDI_0009_I_0001_1,"Vamos a comenzar la prueba principal, en la que responderás {{test_length}} preguntas similares a las que acabas de realizar. \\ No te preocupes si algunas de ellas parecen difíciles; si realmente no conoces la respuesta, haz tu mejor intento."
+AMDI_0010_I_0001_1,**Incorrecto**
+AMDI_0011_I_0001_1,Pregunta **{{num_question}}** de **{{test_length}}**
+AMDI_0012_I_0001_1,La tercera melodía era el intruso.
+AMDI_0013_I_0001_1,¿Qué melodía era el intruso?
+AMDI_0014_I_0001_1,¡Has terminado la prueba!
+AMDI_0015_I_0001_1,Haz clic a continuación para finalizar.
+AMDI_0016_I_0001_1,Continuar
+AMDI_0017_I_0001_1,Tu puntuación es:
+AMDI_0018_I_0001_1,IQ de Discriminación Melódica
+enter_p_id,Por favor inserta tu código de participante
+results_have_been_saved,Tus resultados han sido guardados
+you_may_close_browser,Ahora puedes cerrar la ventana de tu navegador.
+demo_intro,"¡Bienvenido/a al *Test de Disciminación Melódica*!\\ Este test se adapta a tus prestaciones. Si respondes bien, se te ofrecerán pruebas más difíciles.\\ Por lo general, este procedimiento de adaptación está oculto para el participante. Para esta demostración, sin embargo, te mostraremos tu puntuación y el nivel de dificultad correspondiente en cada prueba."

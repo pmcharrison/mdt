@@ -1,3 +1,5 @@
+* Added Spanish support.
+
 # mdt 2.6.1
 
 * Typo fixes in formal German (thanks Klaus Frieler!).
