@@ -25,6 +25,12 @@ stopifnot(!anyDuplicated(input$key),
           all(input$key == spanish$key))
 input$ES <- spanish$ES
 
+latvian <- read.csv("data-raw/dict-latvian.csv", stringsAsFactors = FALSE, encoding = "utf-8")
+names(latvian)[[1]] <- "key"
+stopifnot(!anyDuplicated(input$key),
+          all(input$key == latvian$key))
+input$LV <- latvian$LV
+
 
 mdt_dict <- psychTestR::i18n_dict$new(input)
 usethis::use_data(mdt_dict, overwrite = TRUE)

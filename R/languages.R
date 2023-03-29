@@ -10,6 +10,7 @@ mdt_languages <- function() {
     `German (formal)` = "de_f",
     Italian = "it",
     Russian = "ru",
-    Spanish = "es"
+    Spanish = "es",
+    Latvian = "lv"
   )
 }

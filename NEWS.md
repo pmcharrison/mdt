@@ -1,3 +1,5 @@
+* Added Latvian support.
+
 # mdt 2.7.0
 
 * Added Spanish support.
