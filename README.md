@@ -106,7 +106,7 @@ For more details on the psychTestR interface,
 see http://psychtestr.com/.
 
 The MDT currently supports English (EN), French (FR),
-Russian (RU), Italian (IT),
+Russian (RU), Italian (IT), Latvian (LV),
 and German (both informal and formal).
 If you would like to add a new language to this list, please contact us.
 You can select one of these languages by passing a language code as 
