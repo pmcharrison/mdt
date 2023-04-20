@@ -1,3 +1,23 @@
+# mdt 2.8.0
+
+* Added Latvian support.
+
+# mdt 2.7.0
+
+* Added Spanish support.
+
+# mdt 2.6.1
+
+* Typo fixes in formal German (thanks Klaus Frieler!).
+
+# mdt 2.6.0
+
+* Added formal German support (thanks Klaus Frieler!).
+
+# mdt 2.5.0
+
+* Added Italian support (thanks Elvira Brattico!).
+
 # mdt 2.4.1
 
 * Updated `compile_trial_by_trial_results` documentation.

@@ -1,0 +1,25 @@
+ID,IT
+AMDI_0001_I_0001_1,Benvenuto/a al test di discriminazione melodica!
+AMDI_0002_I_0001_1,"Per ogni domanda di questo test, ascolterai tre versioni della stessa melodia.\\ Ogni versione verrà riprodotta ad un' **altezza diversa**, la melodia è essenzialmente la stessa ma suonata ogni volta un tono più in alto.\\ Una di queste tre versioni sarà **l'intrusa** – una delle sue note è stata modificata.\\ Il tuo compito è identificare qual è l'intrusa."
+AMDI_0003_I_0001_1,"In questo esempio, la seconda melodia è l'intrusa."
+AMDI_0004_I_0001_1,Adesso farai pratica con un paio di domande di prova da solo/a. \\ Non avrai mai sentito prima nessuna di queste melodie.
+AMDI_0005_I_0001_1,Quale melodia era l'intrusa?
+AMDI_0006_I_0001_1,**Giusto!**
+AMDI_0007_I_0001_1,La prima melodia era l'intrusa.
+AMDI_0008_I_0001_1,Vuoi tornare indietro per vedere di nuovo le istruzioni e fare pratica con le domande di prova?
+AMDI_0008_R_0001_1,"Sì, torna indietro"
+AMDI_0008_R_0002_1,"No, sono pronto/a per continuare"
+AMDI_0009_I_0001_1,"Stai per iniziare il test principale, nel quale risponderai {{test_length}} a domande simili a quelle che hai appena provato. \\ Non ti preoccupare se alcune ti sembrano difficili - se proprio non conosci la risposta prova a fare del tuo meglio"
+AMDI_0010_I_0001_1,**Sbagliato**
+AMDI_0011_I_0001_1,Domanda **{{num_question}}** di **{{test_length}}**
+AMDI_0012_I_0001_1,La terza melodia era l'intrusa.
+AMDI_0013_I_0001_1,Quale melodia era l'intrusa?
+AMDI_0014_I_0001_1,Hai terminato il test!
+AMDI_0015_I_0001_1,"Per favore, clicca in basso per terminare."
+AMDI_0016_I_0001_1,Continua
+AMDI_0017_I_0001_1,Il tuo punteggio è :
+AMDI_0018_I_0001_1,IQ di Discriminazione Melodica
+enter_p_id,"Per favore, inserisci il tuo codice partecipante"
+results_have_been_saved,I tuoi risultati sono stati salvati
+you_may_close_browser,Ora puoi chiudere la finestra del tuo browser.
+demo_intro,"Benvenuto/a al *Test di percezione melodica*!\\Questo test si adatta alle tue prestazioni. Se rispondi bene, ti verranno proposte prove più difficili.\\Di solito questa procedura adattiva è nascosta al partecipante. Per questa dimostrazione, tuttavia, mostreremo il tuo punteggio e il livello di difficoltà corrispondente in ogni prova."
