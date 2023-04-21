@@ -1,3 +1,7 @@
+# mdt 2.8.1
+
+* Fixed Latvian dictionary.
+
 # mdt 2.8.0
 
 * Added Latvian support.

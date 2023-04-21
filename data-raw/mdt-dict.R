@@ -1,31 +1,31 @@
-input <- read.csv("data-raw/mdt-dict.csv", stringsAsFactors = FALSE, encoding = "utf-8")
+input <- readr::read_csv("data-raw/mdt-dict.csv")
 names(input)[[1]] <- "key"
 
-russian <- read.csv("data-raw/dict-russian.csv", stringsAsFactors = FALSE, encoding = "utf-8")
+russian <- readr::read_csv("data-raw/dict-russian.csv")
 names(russian)[[1]] <- "key"
 stopifnot(!anyDuplicated(input$key),
           all(input$key == russian$key))
 input$RU <- russian$RU
 
-italian <- read.csv("data-raw/dict-italian.csv", stringsAsFactors = FALSE, encoding = "utf-8")
+italian <- readr::read_csv("data-raw/dict-italian.csv")
 names(italian)[[1]] <- "key"
 stopifnot(!anyDuplicated(input$key),
           all(input$key == italian$key))
 input$IT <- italian$IT
 
-german_formal <- read.csv("data-raw/dict-german-formal.csv", stringsAsFactors = FALSE, encoding = "utf-8")
+german_formal <- readr::read_csv("data-raw/dict-german-formal.csv")
 names(german_formal)[[1]] <- "key"
 stopifnot(!anyDuplicated(input$key),
           all(input$key == german_formal$key))
 input$DE_F <- german_formal$DE_F
 
-spanish <- read.csv("data-raw/dict-spanish.csv", stringsAsFactors = FALSE, encoding = "utf-8")
+spanish <- readr::read_csv("data-raw/dict-spanish.csv")
 names(spanish)[[1]] <- "key"
 stopifnot(!anyDuplicated(input$key),
           all(input$key == spanish$key))
 input$ES <- spanish$ES
 
-latvian <- read.csv("data-raw/dict-latvian.csv", stringsAsFactors = FALSE, encoding = "utf-8")
+latvian <- readr::read_csv("data-raw/dict-latvian.csv")
 names(latvian)[[1]] <- "key"
 stopifnot(!anyDuplicated(input$key),
           all(input$key == latvian$key))
