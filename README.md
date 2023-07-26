@@ -8,6 +8,14 @@ The MDT is an adaptive test of the ability to discriminate melodies.
 We invite you to try the test [here](http://shiny.pmcharrison.com/mdt-demo) and
 to read the paper [here](https://doi.org/10.1038/s41598-017-03586-z).
 
+Want to use this test in your own online study, but don't want to go to the trouble of setting up your own 
+web server? You are invited to host your study on the DOTS testing server of the 
+[German Society for Music Psychology (DGM)](https://en.musikpsychologie.de/index.html).
+This service is free of charge, but requires a current membership of the GDM, which currently
+costs 45 euros per year (22 euros for students and the unemployed).
+For more information please contact Klaus Frieler (kgf@omniversum.de).
+
+
 ## Citation
 
 When using the MDT in your own research, you can cite the original MDT research paper:
