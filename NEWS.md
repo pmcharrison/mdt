@@ -1,3 +1,5 @@
+* Use HTTPS for loading stimuli.
+
 # mdt 2.8.0
 
 * Added Latvian support.
