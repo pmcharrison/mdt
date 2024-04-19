@@ -22,6 +22,11 @@ jobs:
           extra-packages: any::rcmdcheck
           needs: check
 
+      - name: Install shinytest dependencies
+        shell: Rscript {0}
+        run: |
+          if (!shinytest::dependenciesInstalled()) shinytest::installDependencies()
+
       - uses: r-lib/actions/check-r-package@v2
 
       - name: Show testthat output
