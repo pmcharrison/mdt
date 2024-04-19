@@ -1,7 +1,6 @@
 # Melodic Discrimination Test (MDT) 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1300950.svg)](https://doi.org/10.5281/zenodo.1300950)
-[![R-CMD-check](https://github.com/pmcharrison/mdt/workflows/R-CMD-check/badge.svg)](https://github.com/pmcharrison/mdt/actions)
 
 The MDT is an adaptive test of the ability to discriminate melodies.
 
