@@ -3,7 +3,6 @@
 #' Lists the languages available for MDT implementations.
 #' @export
 mdt_languages <- function() {
-  c("EN", "DE", "DE_F", "FR", "RU")
   c(
     English = "en",
     French = "fr",
