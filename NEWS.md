@@ -1,6 +1,8 @@
+* Fixed Latvian dictionary.
+
 # mdt 2.8.1
 
-* Use HTTPS for loading stimuli.
+* Switched to HTTPS for loading stimuli.
 
 # mdt 2.8.0
 
