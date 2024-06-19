@@ -9,7 +9,7 @@ mdt(
   take_training = TRUE,
   label = "MDT",
   feedback = mdt.feedback.no_score(),
-  media_dir = "http://media.gold-msi.org/test_materials/MDT/v4",
+  media_dir = "https://media.gold-msi.org/test_materials/MDT/v4",
   next_item.criterion = "bOpt",
   next_item.estimator = "BM",
   next_item.prior_dist = "norm",

@@ -1,12 +1,19 @@
 # Melodic Discrimination Test (MDT) 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1300950.svg)](https://doi.org/10.5281/zenodo.1300950)
-[![R-CMD-check](https://github.com/pmcharrison/mdt/workflows/R-CMD-check/badge.svg)](https://github.com/pmcharrison/mdt/actions)
 
 The MDT is an adaptive test of the ability to discriminate melodies.
 
-We invite you to try the test [here](http://shiny.pmcharrison.com/mdt-demo) and
+We invite you to try the test [here](https://shiny.gold-msi.org/longgold_demo/) and
 to read the paper [here](https://doi.org/10.1038/s41598-017-03586-z).
+
+Want to use this test in your own online study, but don't want to go to the trouble of setting up your own 
+web server? You are invited to host your study on the DOTS testing server of the 
+[German Society for Music Psychology (DGM)](https://en.musikpsychologie.de/index.html).
+This service is free of charge, but requires a current membership of the GDM, which currently
+costs 45 euros per year (22 euros for students and the unemployed).
+For more information please contact Klaus Frieler (kgf@omniversum.de).
+
 
 ## Citation
 
@@ -59,6 +66,23 @@ into new languages:
 4. Install the melody discrimination test:
 
 `devtools::install_github('pmcharrison/mdt')`
+
+5. Tell Shiny to use your computer's default browser, instead of the RStudio browser,
+   which doensn't play well with this test.
+   First, open your .Rprofile file:
+
+```r
+install.packages("usethis")
+usethis::edit_r_profile()
+```
+
+   Add the following lines:
+
+```r
+options(shiny.launch.browser = .rs.invokeShinyWindowExternal)
+```
+
+  Save the file, then restart your R session (in the RStudio toolbar, click Session then Restart R).
 
 ## Usage
 
