@@ -11,6 +11,7 @@ mdt_languages <- function() {
     Italian = "it",
     Russian = "ru",
     Spanish = "es",
-    Latvian = "lv"
+    Latvian = "lv",
+    Portuguese = "pt"
   )
 }

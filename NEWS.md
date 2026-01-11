@@ -1,3 +1,5 @@
+* Added Portuguese support (thanks Rui Sousa!)
+
 # mdt 2.8.2
 
 * Fixed Latvian dictionary (thanks Klaus Frieler).
