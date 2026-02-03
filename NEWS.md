@@ -1,3 +1,5 @@
+* Portuguese patches
+
 # mdt 2.9.0
 
 * Added Portuguese support (thanks Rui Sousa!)
