@@ -1,3 +1,5 @@
+# mdt 2.9.2
+
 * Portuguese patches.
 * Info page translation patches.
 
