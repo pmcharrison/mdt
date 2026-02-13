@@ -3,17 +3,17 @@ AMDI_0001_I_0001_1,Welcome to the melodic discrimination test!,Bem-vindo ao test
 AMDI_0002_I_0001_1,"For each question of this test, you will hear three versions of the same tune.\\Each version will be at a **different pitch**, essentially the same tune but played one step higher each time.\\One of these three versions will be an **odd one out** â€“ one of its notes will have been changed.\\Your task is to identify which one was the odd one out.","Em cada questão deste teste, ouvirá três versões da mesma melodia.\\Cada versão vai estar num **tom diferente**, será essencialmente a mesma melodia, mas tocada num tom cada vez mais agudo.\\Uma das três versões será ""o intruso"", ou seja, terá uma das notas alterada.\\A sua tarefa é identificar qual é o intruso."
 AMDI_0003_I_0001_1,"In this example, the second melody is the odd one out.","Neste exemplo, a segunda melodia é o intruso."
 AMDI_0004_I_0001_1,Now you will try a couple of practice questions yourself.\\ You won't have heard any of these melodies before.,"Agora, vai praticar com alguns exemplos.\\Nunca ouviu nenhuma destas melodias antes."
-AMDI_0005_I_0001_1,Which melody was the odd one out?,Qual das melodias era o intruso?
+AMDI_0005_I_0001_1,Which melody was the odd one out?,Qual das melodias é o intruso?
 AMDI_0006_I_0001_1,**Correct!**,**Correto!**
 AMDI_0007_I_0001_1,The first melody was the odd one out.,A primeira melodia era o intruso.
 AMDI_0008_I_0001_1,Do you want to go back to see the instructions and practice questions again?,Precisa de voltar atrás e ver as instruções e os exemplos outra vez?
 AMDI_0008_R_0001_1,"Yes, go back","Sim, voltar atrás."
 AMDI_0008_R_0002_1,"No, I'm ready to continue","Não, estou pronto para continuar."
-AMDI_0009_I_0001_1,"You are about to start the main test, where you will answer {{test_length}} questions similar to the ones that you've just tried.\\Don't worry if you find some questions difficult - if you really don't know the answer, just give your best guess.","Vai agora começar o teste, onde vai responder {{test_length}} a perguntas semelhantes às que praticou.\\Não se preocupe se algumas lhe parecerem difíceis - se não souber a resposta, dê o seu melhor palpite."
+AMDI_0009_I_0001_1,"You are about to start the main test, where you will answer {{test_length}} questions similar to the ones that you've just tried.\\Don't worry if you find some questions difficult - if you really don't know the answer, just give your best guess.","Vai agora começar o teste, onde vai responder a perguntas semelhantes às que praticou.\\Não se preocupe se algumas lhe parecerem difíceis - se não souber a resposta, dê o seu melhor palpite."
 AMDI_0010_I_0001_1,**Incorrect.**,**Incorreto.**
 AMDI_0011_I_0001_1,Question **{{num_question}}** out of **{{test_length}}**,Pergunta **{{num_question}}** de **{{test_length}}**
 AMDI_0012_I_0001_1,The third melody was the odd one out.,A terceira melodia era o intruso.
-AMDI_0013_I_0001_1,Which melody was the odd one out?,Qual das melodias era o intruso?
+AMDI_0013_I_0001_1,Which melody was the odd one out?,Qual das melodias é o intruso?
 AMDI_0014_I_0001_1,You finished the test!,Terminou o teste!
 AMDI_0015_I_0001_1,Please click below to finish.,Clique em baixo para terminar.
 AMDI_0016_I_0001_1,Next,Seguinte

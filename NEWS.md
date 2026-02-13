@@ -1,10 +1,13 @@
+* Portuguese patches.
+* Info page translation patches.
+
 # mdt 2.9.1
 
-* Portuguese patches
+* Portuguese patches.
 
 # mdt 2.9.0
 
-* Added Portuguese support (thanks Rui Sousa!)
+* Added Portuguese support (thanks Rui Sousa!).
 
 # mdt 2.8.2
 
